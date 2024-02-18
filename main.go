@@ -16,7 +16,7 @@ func main() {
 	ctx := context.Background()
 
 	// Access your API key
-	apiKey := "AIzaSyB-tzOxeqrI-BBu3VdAe4gVDfAHPCWr-u8"
+	apiKey := os.Getenv("API_KEY")
 	if apiKey == "" {
 		log.Fatal("API_KEY environment variable is not set")
 	}
